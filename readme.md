@@ -1,7 +1,7 @@
 # Welcome to the IndustReal dataset!
 
 
-https://github.com/TimSchoonbeek/IndustReal/assets/54444435/5c7e3968-0839-44ef-8f46-e6f1a6c51e89
+https://github.com/TimSchoonbeek/IndustReal/assets/54444435/02f63bb7-fa40-477a-b6f8-80d66da85656.mp4
 
 
 The IndustReal dataset contains 84 videos, demonstrating how 27 participants perform 
