@@ -17,6 +17,15 @@ in Egocentric Videos in an Industrial-Like Setting"*, will soon be available.
 [13 Sept 2023] GitHub landing page and PSR videos released
 
 
+## 3D printing your own model
+We publish the part geometries together with the video data and ground-truth labels. To print your own model, you can follow these steps:
+1. Use the files included in our dataset or download the latest version from the official [STEMFIE website](https://stemfie.org/sps-000001). Note: if you download the files from the website, you might have a slightly modified version!
+2. Calibrate your 3D printer for STEMFIE files using [this tutorial](https://stemfie.org/scf).
+3. Scale the files by 200% in all directions to obtain the size used in IndustReal.
+4. Print settings: we used an Ultimaker 5S with 0.3mm layer height, 15% triangle infill, 50 mm/s print speed, *0.5 mm hole horizontal expansion*, and raft build plate adhesion.
+5. Print materials: The braces and beams are printed in white PLA, the pins in silver metallic PLA, the nuts, washers, wing, and pulley in magenta PLA and the wheels in black tough PLA.
+
+
 ## Procedure step recognition (PSR)
 The instructions on reproducing the PSR baseline, along with the required code, will soon be available!
 
