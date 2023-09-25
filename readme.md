@@ -43,6 +43,16 @@ The instructions on reproducing the AR baseline, along with the required code, w
 The instructions on reproducing the ASD baseline, along with the required code, will soon be available!
 
 
+## Sensor information
+All data is recorded using the Microsoft HoloLens 2 and the [HL2SS library](https://github.com/jdibenes/hl2ss). The script used to record IndustReal is provided here (**to-do**). 
+
+These are the folder names per recording, including the necessary details:
+
+* **rgb (PV Camera)**. RGB images in .jpg format. Resolution is 1080x720 pixels, recorded at 10 FPS.
+* **stereo_left and stereo_right (Visible Light Cameras)**. Grayscale images in .jpg format of the left-front and right-front cameras. Resolution is 640x480 pixels, recorded at 10 FPS.
+* **depth (Long Throw)**. 3-channel images in .jpg format, 320x288 pixels at 5 FPS. The depth readings are clipped at 75cm, after which the matplotlib *turbo* colormap is applied, and values are normalized to uint8 integers. Unfortionately, software limitations prohibited us from using the AHAT (Short Throw) depth images, it can not be used simultaneously with the PV Camera (at the time of recording). This reduces depth quality and limits FPS to 5. We invite depth estimations based on the provided stereo images. 
+* **ambient_light**. Grayscale images in .jpg format, 320x288 pixels at 5 FPS, acquired together with the depth measurements. The images are obtained by dividing sensor readings by its maximum value and normalizing to the uint8 range.
+
 ## Contributions 
 
 All contributions are welcomed.
