@@ -63,7 +63,6 @@ Please use the following BibTeX entry for citation:
 ```BibTeX
 @misc{schoonbeek2024industreal,
 title={{IndustReal}: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting},
-author={Tim Schoonbeek and Tim Houben and Hans Onvlee and Peter de With and Fons van der Sommen},
 year={2024},
 }
 ```
