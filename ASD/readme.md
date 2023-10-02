@@ -1,7 +1,5 @@
 # Assembly state detection
 
-# Procedure step recognition 
-
 ## Installation 
 
 First pip install the ultralytics package including all [requirements](https://github.com/ultralytics/ultralytics/blob/main/requirements.txt) in a [**Python>=3.8**](https://www.python.org/) environment with [**PyTorch>=1.8**](https://pytorch.org/get-started/locally/).
