@@ -27,7 +27,7 @@ We publish the part geometries together with the video data and ground-truth lab
 
 
 ## Procedure step recognition (PSR)
-The instructions on reproducing the PSR baseline, along with the required code, will soon be available!
+The instructions on reproducing the PSR baseline, along with the required code, can be found [here](https://github.com/TimSchoonbeek/IndustReal/blob/main/PSR/readme.md).
 
 Three videos of the PSR B3 baseline on the IndustReal test set can be found here:
 * [03_assy_0_1](https://youtu.be/S-o6MHxvY5c): desired behaviour from the model
@@ -36,11 +36,11 @@ Three videos of the PSR B3 baseline on the IndustReal test set can be found here
 
 
 ## Action recognition (AR)
-The instructions on reproducing the AR baseline, along with the required code, will soon be available!
+The instructions on reproducing the AR baseline, along with the required code, can be found [here](https://github.com/TimSchoonbeek/IndustReal/blob/main/AR/readme.md).
 
 
 ## Assembly state detection (ASD)
-The instructions on reproducing the ASD baseline, along with the required code, will soon be available!
+The instructions on reproducing the ASD baseline, along with the required code, can be found [here](https://github.com/TimSchoonbeek/IndustReal/blob/main/ASD/readme.md).
 
 
 ## Sensor information
