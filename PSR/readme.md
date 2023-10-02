@@ -3,7 +3,7 @@
 ## Installation 
 
 ```
-$ git clone https://github.com/TimSchoonbeek/PSRT
+$ git clone https://github.com/TimSchoonbeek/IndustReal
 $ cd PSRT
 $ conda create -n PSRT python=3.9 -y
 $ conda activate PSRT
