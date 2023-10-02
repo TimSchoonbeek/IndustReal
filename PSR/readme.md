@@ -4,9 +4,9 @@
 
 ```
 $ git clone https://github.com/TimSchoonbeek/IndustReal
-$ cd PSRT
-$ conda create -n PSRT python=3.9 -y
-$ conda activate PSRT
+$ cd IndustReal
+$ conda create -n IndustReal python=3.9 -y
+$ conda activate IndustReal
 $ pip install -r requirements.txt
 ```
 > **_NOTE:_**  If the weighted-levenshtein gives an error when installing requirements.txt file, remove it from requirements. Then, install it manually from their [GitHub repo](https://github.com/infoscout/weighted-levenshtein) using:
