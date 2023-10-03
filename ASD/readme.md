@@ -4,11 +4,11 @@
 
 First pip install the ultralytics package including all [requirements](https://github.com/ultralytics/ultralytics/blob/main/requirements.txt) in a [**Python>=3.8**](https://www.python.org/) environment with [**PyTorch>=1.8**](https://pytorch.org/get-started/locally/). Please check the ultralytics [repository](https://github.com/ultralytics/ultralytics/tree/main) for more detailed instructions.
 ```
-pip install ultralytics
+$ pip install ultralytics
 ```
 Then download the scripts and install additional requirements.
 ```
-$ git clone https://github.com/TimSchoonbeek/IndustReal/ASD
+$ git clone https://github.com/TimSchoonbeek/IndustReal
 $ pip install pylabel
 ```
 
