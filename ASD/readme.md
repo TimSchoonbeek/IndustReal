@@ -24,6 +24,46 @@ Two scripts are provided for training and validation purposes:
 * *validate.py*: Runs the validation script with the correct hyperparameters and outputs metrics as requested.
 
 To perform ASD and reproduce the results outlined in the paper, follow these steps:
-1. 
-2. 
-3. 
+1. Create the datasets
+```
+python create_dataset_synthetic.py --input_image_folder 'data/synthetic/images/' --data_folder 'datasets/' --name 'synthetic_mixup_occluded' --val_percentage 20 --test_percentage 0 --motion_blur --mixup --occlusions --randomize
+python create_dataset_real.py --name 'real_full'
+python create_dataset_real.py --name 'real_full_bbpresent' --only_with_bb_present
+python create_dataset_hybrid.py --synth_dataset 'synthetic_mixup_occluded' --real_dataset 'real_full' --name 'hybrid_mixup_occluded' --randomize
+```
+
+2. Train the models
+```
+# Train with synthetic dataset, pre-trained on COCO
+python train.py --model_name 'pretrain_industreal_synth' --data_folder 'datasets/' --dataset_name 'synthetic_mixup_occluded' --lr 0.0005 --epochs 30 --patience 5 --pretrain_model 'yolov8m.pt'
+
+# Train with real dataset, pre-trained on COCO
+python train.py --model_name 'real_full_from_coco' --data_folder 'datasets/' --dataset_name 'real_full' --lr 0.0005 --epochs 50 --patience 5 --pretrain_model 'yolov8m.pt'
+
+# Train with real dataset, pre-trained on industreal synthetic
+python train.py --model_name 'real_full_from_industreal_synthetic' --data_folder 'datasets/' --dataset_name 'real_full' --lr 0.0005 --epochs 50 --patience 5 --pretrain_model 'pretrain_industreal_synth.pt'
+
+# Train with hybrid dataset, pre-trained on COCO
+python train.py --model_name 'hybrid_full_from_coco' --data_folder 'datasets/' --dataset_name 'synthetic_mixup_occluded' --lr 0.0005 --epochs 50 --patience 5 --pretrain_model 'yolov8m.pt'
+
+```
+If you also want to start from a pre-trained COCO model, please download from the YOLO github. 
+
+3. Validate the models on the test sets
+```
+# Trained on synthetic dataset, pre-trained on COCO
+python validate.py --model_path 'runs/detect/pretrain_industreal_synth/weights/best.pt' --data_path 'datasets/real_full.yaml' --phase 'test' --get_metrics
+python validate.py --model_path 'runs/detect/pretrain_industreal_synth/weights/best.pt' --data_path 'datasets/real_full_bbpresent.yaml' --phase 'test' --get_metrics
+
+# Trained on real dataset, pre-trained on COCO
+python validate.py --model_path 'runs/detect/real_full_from_coco/weights/best.pt' --data_path 'datasets/real_full.yaml' --phase 'test' --get_metrics
+python validate.py --model_path 'runs/detect/real_full_from_coco/weights/best.pt' --data_path 'datasets/real_full_bbpresent.yaml' --phase 'test' --get_metrics
+
+# Trained on real dataset, pre-trained on industreal synthetic
+python validate.py --model_path 'runs/detect/real_full_from_industreal_synthetic/weights/best.pt' --data_path 'datasets/real_full.yaml' --phase 'test' --get_metrics
+python validate.py --model_path 'runs/detect/real_full_from_industreal_synthetic/weights/best.pt' --data_path 'datasets/real_full_bbpresent.yaml' --phase 'test' --get_metrics
+
+# Trained on hybrid dataset, pre-trained on COCO
+python validate.py --model_path 'runs/detect/hybrid_full_from_coco/weights/best.pt' --data_path 'datasets/real_full.yaml' --phase 'test' --get_metrics
+python validate.py --model_path 'runs/detect/hybrid_full_from_coco/weights/best.pt' --data_path 'datasets/real_full_bbpresent.yaml' --phase 'test' --get_metrics
+```
