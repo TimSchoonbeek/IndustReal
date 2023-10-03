@@ -47,7 +47,7 @@ python train.py --model_name 'real_full_from_industreal_synthetic' --data_folder
 python train.py --model_name 'hybrid_full_from_coco' --data_folder 'datasets/' --dataset_name 'synthetic_mixup_occluded' --lr 0.0005 --epochs 50 --patience 5 --pretrain_model 'yolov8m.pt'
 
 ```
-If you also want to start from a pre-trained COCO model, please download from the YOLO github. 
+Please download the pre-trained COCO model from the [YOLO github](https://github.com/ultralytics/ultralytics). The VOC2012 dataset used for mixup data augmentation can be found [here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html).
 
 3. Validate the models on the test sets
 ```
