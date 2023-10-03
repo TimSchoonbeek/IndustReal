@@ -14,8 +14,7 @@ in Egocentric Videos in an Industrial-Like Setting"*, will soon be available.
 
 **Please follow this page, as updates are expected soon!**
 
-[03 Oct  2023] PSR, AR, and ASD code released 
-
+[03 Oct  2023] PSR, AR, and ASD code released \
 [13 Sept 2023] GitHub landing page and PSR videos released
 
 
