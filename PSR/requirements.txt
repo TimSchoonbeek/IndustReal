@@ -31,3 +31,4 @@ six==1.16.0
 tbb==2021.7.0
 wincertstore==0.2
 XlsxWriter==3.0.3
+bounding-box==0.1.3
