@@ -102,11 +102,12 @@ We publish the part geometries together with the video data and ground-truth lab
 
 
 ## Recording your own data
-To record your own data, you should have a HoloLens 2 (HL2). Then clone the [HL2SS library](https://github.com/jdibenes/hl2ss) and install all required dependencies. Then, you can record your data in the same format as IndustReal following these steps:
-1. Open the [hl2ss_recording_script.py](hl2ss_recording_script.py). Set your host IP (ask "what is my IP" to the HoloLens you are trying to record on) and the directory where the data should be saved.
-2. (optional) Enable the PV camera field-of-view limit indication line with the HL2SS provided script. This prevents users from aiming the HL2 too high, a commonly encountered issue.
+To record your own data, you should have a HoloLens 2 (HL2). Then, you can record your data in the same format as IndustReal following these steps:
+1. Clone the [HL2SS library](https://github.com/jdibenes/hl2ss) and install all required dependencies. 
+2. Open the [hl2ss_recording_script.py](hl2ss_recording_script.py). Set your host IP (ask "what is my IP" to the HoloLens you are trying to record on) and the directory where the data should be saved.
 3. Start the HL2SS app on the HL2.
-4. Start the [hl2ss_recording_script.py](hl2ss_recording_script.py). You are now recording!
+4. (optional) Enable the PV camera field-of-view limit indication line with the HL2SS provided script. This prevents users from aiming the HL2 too high, a commonly encountered issue.
+5. Start the [hl2ss_recording_script.py](hl2ss_recording_script.py). You are now recording!
 
 
 ## Contributions 
