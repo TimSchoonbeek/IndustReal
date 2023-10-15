@@ -11,14 +11,14 @@ Then download the scripts and install additional requirements.
 $ git clone https://github.com/TimSchoonbeek/IndustReal
 $ pip install pylabel
 ```
-Please download the pre-trained COCO model from the ultralytics [repository](https://github.com/ultralytics/ultralytics). The VOC2012 dataset used for mixup data augmentation can be found on this [page](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html).
+Please download the pre-trained COCO model from the ultralytics [repository](https://github.com/ultralytics/ultralytics). The VOC2012 dataset used for mixup data augmentation can be found on [this](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html) page.
 
 ## Usage
 
 Three scripts are provided to prepare the synthetic and/or real data for ASD training:
-* *create_dataset_synthetic.py*: Creates a synthetic dataset in proper YOLO format from the synthetic data from Unity. Effects as motion blur, occlusions and image mixup can be anabled as data augmentation methods.
+* *create_dataset_synthetic.py*: Creates a synthetic dataset in proper YOLO format from the synthetic data from Unity. Effects as motion blur, occlusions and image mixup can be enabled as data augmentation methods.
 * *create_dataset_real.py*: Creates a dataset in proper YOLO format from the IndustReal dataset.
-* *create_dataset_hybrid.py*: Creates a new dataset, by combinding two YOLO formatted datasets. This is used to make a hybrid dataset of synthetic and real images.
+* *create_dataset_hybrid.py*: Creates a new dataset, by combining two YOLO formatted datasets. This is used to make a hybrid dataset of synthetic and real images.
 
 Two scripts are provided for training and validation purposes:
 * *train.py*: Runs the training with the correct hyperparameters. If the parameter "name" is not set, the network name is automatically generated.
