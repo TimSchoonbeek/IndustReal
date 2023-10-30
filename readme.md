@@ -18,6 +18,7 @@ in Egocentric Videos in an Industrial-Like Setting"*, will soon be available.
 
 **Please follow this page, as updates are expected soon!**
 
+[30 Oct  2023] Paper pre-print is available [here](https://arxiv.org/pdf/2310.17323.pdf)! \
 [03 Oct  2023] PSR, AR, and ASD code released \
 [13 Sept 2023] GitHub landing page and PSR videos released
 
