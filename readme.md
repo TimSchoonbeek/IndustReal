@@ -1,7 +1,11 @@
 # Welcome to the IndustReal dataset!
 
 
-https://github.com/TimSchoonbeek/IndustReal/assets/54444435/02f63bb7-fa40-477a-b6f8-80d66da85656.mp4
+
+
+https://github.com/TimSchoonbeek/IndustReal/assets/54444435/ec67b3f4-b2c5-4457-af66-be7beb680f21
+
+
 
 
 The IndustReal dataset contains 84 videos, demonstrating how 27 participants perform 
@@ -120,10 +124,10 @@ Please use the following BibTeX entry for citation:
 ```BibTeX
 @misc{schoonbeek2024industreal,
 title={{IndustReal}: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting},
+author={Tim J. Schoonbeek and Tim Houben and Hans Onvlee and Peter H. N. de With and Fons van der Sommen},
 year={2024},
 }
 ```
-
 
 
 ## License
