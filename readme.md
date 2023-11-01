@@ -12,13 +12,14 @@ The IndustReal dataset contains 84 videos, demonstrating how 27 participants per
 maintenance and assembly procedures on a construction-toy assembly set. 
 The dataset, along with the 3D part geometries and trained model weights for the best performing models as reported
 in the paper *"IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors 
-in Egocentric Videos in an Industrial-Like Setting"*, will soon be available.
+in Egocentric Videos in an Industrial-Like Setting"*, is available [here](https://data.4tu.nl/datasets/b008dd74-020d-4ea4-a8ba-7bb60769d224).
 
 ## News
 
 **Please follow this page, as updates are expected soon!**
 
-[30 Oct  2023] Paper pre-print is available [here](https://arxiv.org/pdf/2310.17323.pdf)! \
+[01 Nov  2023] [Data](https://data.4tu.nl/datasets/b008dd74-020d-4ea4-a8ba-7bb60769d224) released! \
+[30 Oct  2023] Paper pre-print is available [here](https://arxiv.org/pdf/2310.17323.pdf) \
 [03 Oct  2023] PSR, AR, and ASD code released \
 [13 Sept 2023] GitHub landing page and PSR videos released
 
