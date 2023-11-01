@@ -106,6 +106,7 @@ We publish the part geometries together with the video data and ground-truth lab
 4. Print settings: we used an Ultimaker 5S with 0.3mm layer height, 15% triangle infill, 50 mm/s print speed, *0.5 mm hole horizontal expansion*, and raft build plate adhesion.
 5. Print materials: The braces and beams are printed in white PLA, the pins in silver metallic PLA, the nuts, washers, wing, and pulley in magenta PLA and the wheels in black tough PLA.
 
+We are thankful to the [STEMFIE project](https://stemfie.org/sps-000001) for open-sourcing their 3D printed toy construction sets, enabling our research!
 
 ## Recording your own data
 To record your own data, you should have a HoloLens 2 (HL2). Then, you can record your data in the same format as IndustReal following these steps:
