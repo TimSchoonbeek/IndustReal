@@ -43,7 +43,7 @@ The instructions on reproducing the ASD baseline, along with the required code, 
 
 ## Data information
 
-The dataset can be downloaded [here](TODO). IndustReal should be structured as follows:
+The dataset can be downloaded [here](https://data.4tu.nl/datasets/b008dd74-020d-4ea4-a8ba-7bb60769d224). IndustReal should be structured as follows:
 ```md
 IndustReal
 ├── part_geometries
