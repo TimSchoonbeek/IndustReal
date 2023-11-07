@@ -6,7 +6,7 @@
 https://github.com/TimSchoonbeek/IndustReal/assets/54444435/ec67b3f4-b2c5-4457-af66-be7beb680f21
 
 
-
+### Check out our [project page](https://timschoonbeek.github.io/industreal.html)!
 
 The IndustReal dataset contains 84 videos, demonstrating how 27 participants perform 
 maintenance and assembly procedures on a construction-toy assembly set. 
