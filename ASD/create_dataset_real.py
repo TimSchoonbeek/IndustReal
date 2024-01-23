@@ -134,12 +134,6 @@ if __name__ == "__main__":
     create_dir(os.path.join(args.dataset_output_folder, args.name, "labels"))
     create_dir(os.path.join(args.dataset_output_folder, args.name, "annotations"))
 
-    with open(os.path.join(args.dataset_output_folder, "template.yaml"), 'r') as file :
-        filedata = file.read()
-    filedata = filedata.replace('template', args.name)
-    with open(os.path.join(args.dataset_output_folder, args.name + ".yaml"), 'w') as file:
-        file.write(filedata)
-
     print("Adding to Train set...")
     create_dataset(args, 'train')
 
