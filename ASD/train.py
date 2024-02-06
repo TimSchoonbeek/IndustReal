@@ -14,7 +14,7 @@ from ultralytics import YOLO
 
 def setup_options():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--pretrain_model_path', default='/shared/nl011006/res_ds_ml_restricted/TimH/baselines/obj_recon/yolov8/ultralytics-main/pretrained/', type=str, help='Path to the weights of the model')
+    parser.add_argument('--pretrain_model_path', default='pretrained/', type=str, help='Path to the weights of the model')
     parser.add_argument('--model_pretrain_name', default='coco', type=str, help='Model prefix name')
     parser.add_argument('--data_folder', default='datasets/', type=str, help='Input folder for the images to make qualitative results of')
     parser.add_argument('--dataset_name', default='synthetic_vanilla', type=str, help='Dataset Name')
