@@ -125,10 +125,12 @@ All contributions are welcomed.
 ## Citing IndustReal
 Please use the following BibTeX entry for citation:
 ```BibTeX
-@misc{schoonbeek2024industreal,
-title={{IndustReal}: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting},
-author={Tim J. Schoonbeek and Tim Houben and Hans Onvlee and Peter H. N. de With and Fons van der Sommen},
-year={2024},
+@inproceedings{schoonbeek2024industreal,
+  title={IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting},
+  author={Schoonbeek, Tim J and Houben, Tim and Onvlee, Hans and van der Sommen, Fons and others},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={4365--4374},
+  year={2024}
 }
 ```
 
